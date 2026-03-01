@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager Todo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    button:active {
+      scale: 0.8;
+    }
+
+
+    .todos_collection {
+      margin-top: 800px;
+    }
+
+    body {
+      width: 100w;
+      height: 100vh;
+      background-color: rgb(41, 56, 56);
+    }
+
+    .todos_collection {
+      height: 450px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container my-3 rounded-3 p-3 h-25  ">
+    <div class="shadow rounded rounded-3 p-3 mt-2 bg-white">
+      <h2>Add Your Daily Task</h2>
+      <div class="d-flex mt-3 justify-content-evenly shadow rounded border border-primary p-2">
+        
+        <div class="mb-3 w-25">
+          <label for="todo_title" class="form-label">Todo</label>
+          <input type="text" class="form-control" id="todo_title" placeholder="Workout,Reading etc" />
+        </div>
+
+        <div class="mb-3 w-25">
+          <label for="todo_title" class="form-label">priority</label>
+
+          <div>
+            <!-- <input type="text" class="form-control" id="todo_title" > -->
+            <select class="form-select" aria-label="Default select example" id="todo_priority" value="">
+              <option selected value="Default">select priority</option>
+              <option value="high">high</option>
+              <option value="medium">medium</option>
+              <option value="low">low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="d-flex w-25 align-items-center mt-4">
+          <button id="add_todo" class="btn btn-primary w-100 mb-3 d-flex justify-content-center">
+            Add Todo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 h-75 d-flex justify-content-center mt-5  rounded ">
+
+    <div class="  bg-white w-75 h-100 rounded">
+      <h3 class=" w-100 text-center">Your Todos..</h3>
+
+      <div id="todos_collection" class="todos_collection mt-3 shadow  rounded m-3 p-3 ">
+        <div class="d-flex justify-content-center">
+          <div class="shadow d-flex rounded m-3 p-3 fs-3 mt-3 w-75 justify-content-center border border-primary">
+            <h3 class="my-3">Your Todos..</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
