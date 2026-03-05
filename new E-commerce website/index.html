@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy You Thing </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- navbar section -->
+  <section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 badge rounded-pill text-bg-success" href="#">Buy You Thing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="ri-login-circle-line"></i>login
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i class="ri-account-circle-line"></i> My Profile </a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:5501/singin.html"><i class="ri-login-box-line"></i> Sing In </a>
+                </li>
+
+                <li><a class="dropdown-item" href="http://127.0.0.1:5501/singup.html"><i class="ri-login-circle-line"></i> Sign Up</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="ri-shopping-cart-line"></i></i>My Card
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i class="ri-list-ordered-2"></i> </i> Order </a></li>
+                <li><a class="dropdown-item" href="#"><i class="ri-file-list-line"></i> Wishlist </a></li>
+
+                <li><a class="dropdown-item" href="#"><i class="ri-gift-line"></i> Rewards</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="ri-menu-line"> Help</i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i class="ri-notification-2-line"></i> Notification
+                    Preferences</a></li>
+                <li><a class="dropdown-item" href="#"><i class="ri-phone-line"></i> 24*7 Customer Care </a></li>
+
+                <li><a class="dropdown-item" href="#"><i class="ri-advertisement-line"></i> Advertise</a></li>
+              </ul>
+            </li>
+
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="user_input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button id="search_btn" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Hero section -->
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide h-100">
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner h-50">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/1200x/95/f9/16/95f916f0e120311e8c76893a412e3077.jpg"
+            class="d-block w-100 banner" alt="...">
+        </div>
+
+        <div class="carousel-item ">
+          <img src="https://i.pinimg.com/1200x/48/45/07/4845070f49baf96e308ac90837ee1bd7.jpg"
+            class="d-block w-100  banner " alt="...">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/1200x/db/9d/90/db9d90ddb0e9aecaf48216b9e2b58661.jpg"
+            class="d-block w-100 banner" alt="...">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- card section -->
+  <section >
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col h-75">
+            <div class="card shadow-sm">
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/1200x/30/87/8f/30878f915045f642eb6fc9493e1b4cb9.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Get instant glow and 24-hour nourishment with Dove Glow Body Lotion 
+                  enriched with mango butter for soft, radiant skin.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/736x/f5/db/05/f5db05994c210e861ffaed67827e3c58.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  98% natural shampoo designed to reduce hair loss and stimulate hair 
+                  follicles for stronger, healthier hair.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/736x/f8/29/5d/f8295da8caaea92edd090baffa5e10ad.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Stylish and comfortable Nike Air sneakers designed for 
+                  everyday wear and sports performance.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/1200x/1a/b4/c9/1ab4c9c74f8a234ff5f4205bba7a7965.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Comfortable and stylish navy blue tracksuit set designed 
+                  for workouts, casual wear, and everyday comfort.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/736x/89/22/cb/8922cbb32be1f2d5c6ef3edd1ee26c97.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  A premium long-lasting fragrance crafted to ignite passion 
+                  and confidence with every spray.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/736x/6d/a5/b9/6da5b91252b5e035f41b4cda8fc02014.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Boost your energy instantly with Lit Energy Blueberry 
+                  Drink enriched with caffeine and taurine.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/1200x/ef/1a/f5/ef1af55a0dbe36e193554a4dbf55e2af.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Elegant olive green shoulder bag with premium finish, spacious interior, 
+                  and stylish design — perfect for daily and party use.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>-
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/1200x/a4/43/86/a44386ed82dc7f85d75c0cf3f8a2bb1e.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Premium Casio analog-digital watch with rugged design,
+                  water resistance, and long battery life.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top bg-danger">
+                <img style="height: 225px;" class="img-fluid w-100 h-50"
+                  src="https://i.pinimg.com/736x/48/51/37/485137a939fa805218836ad33d77784e.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Portable JBL Flip 5 speaker with powerful bass, 
+                  waterproof design, and long battery life.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      View More
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary m-3">
+                      Add To Cart
+                    </button>
+                  </div>
+                  <small class="text-body-secondary fs-3"><i class="ri-heart-3-line"></i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="text-body-secondary py-5  bg-black ">
+    <h1 class="w-100 p-2 text-center text-white">See personalized recommendations</h1>
+    <div class="w-100  text-center">
+      <a class="w-25 bg-yellow rounded-3 p-2 bg-light text-black style-none fs-3"
+        href="http://127.0.0.1:5501/singup.html">sign Up</a>
+      <p class="text-secondary mt-2">New Customer ? <a href="#" placeholder="Star Here"></a></p>
+    </div>
+    
+    <div class="w-100">
+      <button class="w-100 p-2 fs-3 text-white bg-secondary"><a class="style-none" href="#">Back to top</a></button>
+    </div>
+
+    <div class=" text-center d-flex justify-content-around justify-content-center ">
+
+      <div class="mt-4">
+        <h3 class="p-1 text-white ">Get to Know Us</h3>
+        <div class="table-responsive mt-5 ">
+
+          <table class="table ">
+            <a class="style-none text-white " href="#">About Buy You Thing</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-sm ">
+          <table class="table">
+            <a class="style-none text-white " href="#">Careers</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-md ">
+          <table class="table">
+            <a class="style-none text-white " href="#">Press Releases</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-lg ">
+          <table class="table">
+            <a class="style-none text-white " href="#">Amazon Science</a>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="mt-4">
+        <h3 class="p-1 text-white">Connect with Us</h3>
+        <div class="table-responsive p-1 mt-5">
+
+          <table class="table">
+            <a class="style-none text-white  " href="#">Facebook</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-sm p-1">
+          <table class="table">
+            <a class="style-none text-white " href="#">Twitter</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-md p-1">
+          <table class="table">
+            <a class="style-none text-white " href="#">Instagram</a>
+          </table>
+        </div>
+      </div>
+
+      <div class=" mt-4">
+        <h3 class="p-1 text-white">Let Us Help You</h3>
+        <div class="table-responsive p-1 mt-5">
+
+          <table class="table">
+            <a class="style-none text-white  " href="#">Your Account</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-sm p-1">
+          <table class="table">
+            <a class="style-none text-white " href="#">Returns Centre</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-md p-1">
+          <table class="table">
+            <a class="style-none text-white " href="#">Recalls and Product Safety Alerts</a>
+          </table>
+        </div>
+
+        <div class="table-responsive-lg p-1">
+          <table class="table">
+            <a class="style-none text-white " href="#">100% Purchase Protection</a>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="container ">
+      <div class="d-flex justify-content-center mt-5 row row-cols-sm-1 row-cols-md-2 roe-cols-lg-3">
+        <div class="w-25 fs-1 text-white">
+          Buy You Thing
+        </div>
+
+        <div class="d-flex w-50 ">
+          <div class="d-flex align-items-center m-1 w-50 ">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class=" d-flex align-items-center m-1 w-50">
+            <button class="p-1 w-100 bg-success text-white">india</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
